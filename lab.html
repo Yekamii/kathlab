@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KathLab</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="icon" href="img/Glowing_Rat_Logo_HQ_With_Glow.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  </head>
+  <body>
+    <header class="navbar">
+      <a href="index.html" class="logo-text">KathLab</a>
+      <nav>
+        <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a  href="about.html">About Us</a></li>
+          <li><a class="active" href="hub.html">KathHub</a></li>
+        </ul>
+      </nav>
+      <a href="hub.html" class="btn-explore">Explore Now</a>
+    </header>
+    <main class="lab-page">
+        
+      <aside class="lab-sidebar">
+        <h3 class="sidebar-title">Categories</h3>
+        <ul>
+          <li class="active" data-cat="all"><i class="fa-solid fa-globe"></i> All <span class="cat-count"></span></li>
+          <li data-cat="bio"><i class="fa-solid fa-dna"></i> Biology <span class="cat-count"></span></li>
+          <li data-cat="chem"><i class="fa-solid fa-flask"></i> Chemistry <span class="cat-count"></span></li>
+          <li data-cat="phys"><i class="fa-solid fa-atom"></i> Physics <span class="cat-count"></span></li>
+          <li data-cat="tech"><i class="fa-solid fa-robot"></i> Technology <span class="cat-count"></span></li>
+          <li data-cat="math"><i class="fa-solid fa-square-root-variable"></i> Mathematics <span class="cat-count"></span></li>
+          <li data-cat="fun"><i class="fa-solid fa-gamepad"></i> Fun <span class="cat-count"></span></li>
+        </ul>
+      </aside>
+       
+      <section class="lab-content">
+        <h2 class="lab-title">Explore Virtual Labs</h2>
+        <div class="lab-grid" id="labGrid"></div>
+       
+      
+      </section>
+    </main>
+  <footer>
+      <div class="footer-title">Connect with KathLab</div>
+      <div class="social-icons">
+        <a href="#" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+        <a href="#" target="_blank" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+      </div>
+      <div class="contact-info">
+          Contact us at: <a href="mailto:kathlab@example.com">kathlab@example.com</a>
+      </div>
+    </footer>
+  <script src="js/lab.js"></script>
+  <script src="js/labs-loader.js"></script>
+  </body>
+</html>

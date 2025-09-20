@@ -1,0 +1,185 @@
+[
+  {
+    "id": "bio_osmosis",
+    "title": "Osmosis U-Tube",
+    "category": "bio",
+    "level": "beginner",
+    "duration": 2,
+    "thumb": "img/osmo.png",
+    "summary": "Explore water movement across a membrane when salt is added.",
+    "interactive_url": "osmosis.html"
+  },
+  {
+    "id": "bio_osmosis_solution",
+    "title": "Physiological Solution",
+    "category": "bio",
+    "level": "intermediate",
+    "duration": 4,
+    "thumb": "img/saline.png",
+    "summary": "Understand how osmotic balance affects blood cells",
+    "interactive_url": "phys_solution.html"
+  },
+  {
+    "id": "bio_ABO_Explorer",
+    "title": " ABO Explorer",
+    "category": "bio",
+    "level": "Intermediate",
+    "duration": 12,
+    "thumb": "img/blood.png",
+    "summary": "Discover blood types by testing virtual blood samples and finding their antigens and antibodies.",
+    "interactive_url": "ABO_Explorer.html"
+  }, 
+  {
+  "id": "bio_photosynthesis_process",
+  "title": "Photosynthesis in Action",
+  "category": "bio",
+  "level": "intermediate",
+  "duration": 10,
+  "thumb": "img/photosynthesis.png",
+  "summary": "Discover how light, carbon dioxide, temperature affect the rate of photosynthesis",
+  "interactive_url": "photosynthesis_process.html"
+},
+{
+  "id": "bio_bone_chemistry",
+  "title": "Bone Chemical Composition",
+  "category": "bio",
+  "level": "intermediate",
+  "duration": 9,
+  "thumb": "img/bones.png",
+  "summary": "Explore the chemical components of bone, including calcium salts and collagen, and how they give bones strength and flexibility",
+  "interactive_url": "bone_chemistry.html"
+},
+{
+  "id": "bio_potato_osmometer",
+  "title": "Potato Osmometer",
+  "category": "bio",
+  "level": "intermediate",
+  "duration": 7,
+  "thumb": "img/potato.png",
+  "summary": "Investigate osmosis using a potato as a model cell to see how water moves through membranes in different solutions",
+  "interactive_url": "potato_osmometer.html"
+},
+{
+  "id": "bio_membrane_potential",
+  "title": "Membrane Potential Simulation",
+  "category": "bio",
+  "level": "intermediate",
+  "duration": 10,
+  "thumb": "img/cell.png",
+  "summary": "Simulate how ions move across cell membranes and create electrical charges that lead to membrane potential",
+  "interactive_url": "membrane_potential_sim.html"
+},
+{
+  "id": "bio_hershey_chase_experiment",
+  "title": "Hershey and Chase Experiment",
+  "category": "bio",
+  "level": "Advanced",
+  "duration": 12,
+  "thumb": "img/bacteriophage.png",
+  "summary": "Visualize how radioactive labeling of protein and DNA in bacteriophages proved that DNA carries genetic information, not protein",
+  "interactive_url": "hershey_chase_experiment.html"
+},
+{
+    "id": "bio_meselson_stahl_experiment",
+    "title": "Meselson and Stahl Experiment",
+    "category": "bio",
+    "level": "advanced",
+    "duration": 15,
+    "thumb": "img/dna.png",
+    "summary": "Learn how DNA replication was proven to be semi-conservative",
+    "interactive_url": "meselson_stahl_experiment.html"
+  },
+  {
+  "id": "bio_pasteur_experiment",
+  "title": "Louis Pasteur's Experiment",
+  "category": "bio",
+  "level": "intermediate",
+  "duration": 10,
+  "thumb": "img/bacteria.png",
+  "summary": "Discover how Pasteur disproved spontaneous generation by showing that bacteria come from other bacteria, not from 'nothing'",
+  "interactive_url": "pasteur_experiment.html"
+},
+{
+  "id": "bio_griffith_experiment",
+  "title": "Griffith's Transformation Experiment",
+  "category": "bio",
+  "level": "Advanced",
+  "duration": 10,
+  "thumb": "img/rat.png",
+  "summary": "Explore how Frederick Griffith discovered that a 'transforming principle' could transfer genetic traits between bacteria",
+  "interactive_url": "griffith_transformation.html"
+},
+{
+  "id": "neuro_avoidance_learning",
+  "title": "Avoidance Learning Test",
+  "category": "bio",
+  "level": "Advanced",
+  "duration": 9,
+  "thumb": "img/study.png",
+  "summary": "Understand how animals learn to avoid unpleasant stimuli by forming associations between behavior and negative outcomes",
+  "interactive_url": "avoidance_learning_test.html"
+},
+{
+  "id": "neuro_forced_swim_test",
+  "title": "Forced Swim Test (FST)",
+  "category": "bio",
+  "level": "Advanced",
+  "duration": 8,
+  "thumb": "img/depression.png",
+  "summary": "Study depressive-like behavior in animals by measuring their activity and immobility when placed in water",
+  "interactive_url": "forced_swim_test.html"
+},
+{
+  "id": "seahorse_xf_analyzer_test",
+  "title": "Mitochondrial Power",
+  "category": "bio",
+  "level": "Advanced",
+  "duration": 10,
+  "thumb": "img/mitochondria.png",
+  "summary": "Explore how mitochondria produce energy by measuring oxygen consumption and glycolysis in live cells using Seahorse XF Analyzer.",
+  "interactive_url": "seahorse_xf_test.html"
+},
+{
+  "id": "bio_protein_denaturation",
+  "title": "Protein Denaturation and Renaturation",
+  "category": "bio",
+  "level": "intermediate",
+  "duration": 10,
+  "thumb": "img/egg.png",
+  "summary": "Visualize how protein structure changes under heat or pH shifts",
+  "interactive_url": "protein_denaturation.html"
+},
+{
+  "id": "bio_natural_selection_simulation",
+  "title": "Natural Selection Simulation",
+  "category": "bio",
+  "level": "intermediate",
+  "duration": 12,
+  "thumb": "img/selection.png",
+  "summary": "Simulate changing environments and population adaptation where students choose traits that survive and explain why",
+  "interactive_url": "natural_selection_simulation.html"
+},
+{
+  "id": "bio_virus_vs_time",
+  "title": "Virus vs Time",
+  "category": "fun", 
+  "level": "intermediate",
+  "duration": 10,
+  "thumb": "img/covid-19.png",
+  "summary": "Connect virus incubation time with spread rate in a fun simulation where students observe how timing affects outbreak dynamics",
+  "interactive_url": "virus_vs_time.html"
+},
+{
+  "id": "bio_food_energy_test",
+  "title": "Food Energy Test",
+  "category": "bio",
+  "level": "intermediate",
+  "duration": 10,
+  "thumb": "img/energy.png",
+  "summary": "Measure the energy content of food by burning samples and observing how much heat is transferred to water in a calorimeter setup",
+  "interactive_url": "food_energy_test.html"
+}
+
+
+]
+

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KathLab</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="icon" href="img/Glowing_Rat_Logo_HQ_With_Glow.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <header class="navbar">
+      <a href="index.html" class="logo-text">KathLab</a>
+      <nav>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a  href="about.html">About Us</a></li>
+                <li><a class="active" href="hub.html">KathHub</a></li>
+            </ul>
+      </nav>
+      <a href="hub.html" class="btn-explore">Explore Now</a>
+</header>
+<main>
+    <h1 class="main-title">Griffith's Transformation Experiment</h1>
+
+    <div class="start-container">
+        <button id="startBtn" class="start-button">Start</button>
+    </div>
+
+    <div id="experimentContainer" class="experiment-container hidden">
+
+        <div class="experiment-layout">
+
+            <div class="left-side">
+                <div class="mouse-cage" id="cage-mice">
+                    <img src="img/cage.png" alt="Mouse Cage" class="cage-img">
+                    <img src="img/mouserat.png" alt="Mouse" class="mouse-img">
+                    <img src="img/mouserat.png" alt="Mouse" class="mouse-img">
+                    <img src="img/mouserat.png" alt="Mouse" class="mouse-img">
+                </div>
+            <div class="mouse-buttons">
+                <button class="mouse-btn control"  id="select-control">Select Control Mouse</button>
+                <button class="mouse-btn select" id="select-test">Select Test Mouse</button>
+            </div>
+        </div>
+    <div class="mouse-frames">
+        <div class="mouse-frame">
+            <div class="frame-title" id="control-box"><h3>Control Mouse</h3></div>
+        </div>
+        <div class="mouse-frame" >
+            <div class="frame-title"  id="test-box"><h3>Test Mouse</h3></div>
+        </div>
+    </div>
+
+    <div class="right-side">
+        <button class="bacteria-option non-virulent" >R strain (non-virulent)</button>
+        <button class="bacteria-option virulent" >S strain (virulent)</button>
+        <button class="bacteria-option Heat-killed" >Heat-killed S strain</button>
+        <button class="bacteria-option Heat-killedpl" >Heat-killed S + live R</button>
+        <button class="Reset" >Reset</button>
+    </div>
+</main>
+<footer class="photfoot">
+      <div class="footer-title">Connect with KathLab</div>
+      <div class="social-icons">
+        <a href="#" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+        <a href="#" target="_blank" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+      </div>
+      <div class="contact-info">
+          Contact us at: <a href="mailto:kathlab@example.com">kathlab@example.com</a>
+      </div>
+</footer>
+</body>
+<script src="js/griffith.js"></script>
+<script src="js/selectmouse.js"></script>
+<script src="js/Rstrain.js"></script>
+<script src="js/Rstainexp.js"></script>
+<script src="js/Sstrain.js"></script>
+<script src="js/Sstrainexp.js"></script>
+<script src="js/deadS.js"></script>
+<script src="js/deadSexp.js"></script>
+<script src="js/RSstrain.js"></script>
+<script src="js/RSstainexp.js"></script>
+<script src="js/griffitreset.js"></script>
+<script src="js/griffitcontrol.js"></script>
+</html>

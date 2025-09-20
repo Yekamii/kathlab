@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KathLab</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="icon" href="img/Glowing_Rat_Logo_HQ_With_Glow.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <header class="navbar">
+      <a href="index.html" class="logo-text">KathLab</a>
+      <nav>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a  href="about.html">About Us</a></li>
+                <li><a class="active" href="hub.html">KathHub</a></li>
+            </ul>
+      </nav>
+      <a href="hub.html" class="btn-explore">Explore Now</a>
+    </header>
+<main class="photomain">
+    <div class="wrapper">
+        <img src="img/lamp.png" alt="Lamp" class="lamp" />
+        <div class="lamp-glow" id="lampGlow"></div>
+        <div class="glass-container">
+            <div class="plantwater">
+                <div class="thermometer-container">
+                    <div class="bulb"></div>
+                    <div class="stem">
+                        <div class="mercury"></div>
+                    </div>
+                </div>
+                <img src="img/food.png" alt="Plant in water" class="plant-in-water" />
+            </div>
+        </div>
+    </div>
+    <div class="controller-panel">
+        <div class="control-group">
+            <label for="temperature">Temperature (°C):</label>
+            <select id="temperature">
+                <option>0</option>
+                <option>10</option>
+                <option>15</option>
+                <option>20</option>
+                <option>30</option>
+                <option>40</option>
+            </select>
+        </div>
+        <div class="control-group">
+            <label for="light">Light (lux):</label>
+            <select id="light">
+                <option>50</option>
+                <option>100</option>
+                <option>150</option>
+                <option>300</option>
+                <option>500</option>
+                <option>800</option>
+                <option>1000</option>
+            </select>
+        </div>
+        <div class="control-group">
+            <label for="co2">CO₂ (ppm):</label>
+            <select id="co2">
+                <option>100</option>
+                <option>200</option>
+                <option>300</option>
+                <option>400</option>
+                <option>600</option>
+                <option>900</option>
+                <option>1100</option>
+            </select>
+        </div>
+
+        <button class="start-button" id="startBtn">Start</button>
+        <button class="stop-button" id="stoptBtn">Stop</button>
+        <button class="reset-button" id="resetBtn">Reset</button>
+
+        <div class="info-panel">
+            <p>Bubbles: <span id="bubbleCount">0</span></p>
+            <p>Time: <span id="timer">0</span> s</p>
+        </div>
+    </div>
+
+    <div class="waterb" id="water">
+    <!-- აქ  ბუშტები -->
+    </div> 
+</main>
+<footer class="photfoot">
+      <div class="footer-title">Connect with KathLab</div>
+      <div class="social-icons">
+        <a href="#" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+        <a href="#" target="_blank" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+      </div>
+      <div class="contact-info">
+          Contact us at: <a href="mailto:kathlab@example.com">kathlab@example.com</a>
+      </div>
+</footer>
+</body>
+<script type="module" src="js/data-loader.js"></script>
+<script type="module" src="js/photorate.js"></script>
+<script src="js/temper.js"></script>
+<script src="js/light.js"></script>
+</html>

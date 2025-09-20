@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>KathLab</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="style/style.css">
+  <link rel="icon" href="img/Glowing_Rat_Logo_HQ_With_Glow.png">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+  <header class="navbar">
+    <a href="index.html" class="logo-text">KathLab</a>
+    <nav>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a class="active" href="hub.html">KathHub</a></li>
+      </ul>
+    </nav>
+    <a href="hub.html" class="btn-explore">Explore Now</a>
+  </header>
+
+  <main>
+    <h2 class="Hersheyh">Hershey and Chase Experiment</h2>
+    <section class="hc-stage" id="hcStage">
+      <h3 class="hc-title">Label a bacteriophage</h3>
+
+      <div class="hc-plate">
+        
+        <div class="hc-phage" data-phage="A" data-mode="dna">
+          <div class="hc-badge">^32P / DNA</div>
+          <svg viewBox="0 0 108 120" class="hc-svg">
+            
+            <polygon class="hc-capsid hc-protein"
+              points="54,7 81,28 71,55 37,55 27,28"
+            />
+            
+            <rect x="50" y="55" width="7" height="15" rx="2.4" class="hc-tail"/>
+            <line x1="54" y1="71" x2="54" y2="90" class="hc-tail"/>
+            <line x1="42" y1="83" x2="66" y2="83" class="hc-tail"/>
+            
+            <g class="hc-dna">
+              <path d="M45 18 C 57 23, 57 32, 45 36
+                       M45 36 C 57 41, 57 50, 45 54"
+                class="hc-dna-coil"/>
+            </g>
+            
+            <g class="hc-dots" data-target="A"></g>
+          </svg>
+          <button class="hc-action" data-action="label-dna">
+            Label DNA with ^32P
+          </button>
+        </div>
+
+        
+        <div class="hc-phage" data-phage="B" data-mode="protein">
+          <div class="hc-badge">^35S / Protein</div>
+          <svg viewBox="0 0 108 120" class="hc-svg">
+            <polygon class="hc-capsid hc-protein"
+              points="54,7 81,28 71,55 37,55 27,28"
+            />
+            <rect x="50" y="55" width="7" height="15" rx="2.4" class="hc-tail"/>
+            <line x1="54" y1="71" x2="54" y2="90" class="hc-tail"/>
+            <line x1="42" y1="83" x2="66" y2="83" class="hc-tail"/>
+            <g class="hc-dna">
+              <path d="M45 18 C 57 23, 57 32, 45 36
+                       M45 36 C 57 41, 57 50, 45 54"
+                class="hc-dna-coil"/>
+            </g>
+            <g class="hc-dots" data-target="B"></g>
+          </svg>
+          <button class="hc-action" data-action="label-protein">
+            Label protein with ^35S
+          </button>
+        </div>
+      </div>
+
+      <div class="hc-fx-layer" aria-hidden="true"></div>
+    </section>
+    <section class="hc-bacteria-stage">
+    <div class="hc-bacteria-plate"> 
+      
+      <div class="hc-bacterium" data-side="left">
+        <img src="img/bacteriaa.png" alt="Bacterium" class="hc-bacteria-img">
+        <div class="hc-attach-layer"></div>
+      </div>
+
+      
+      <div class="hc-bacterium" data-side="right">
+        <img src="img/bacteriaa.png" alt="Bacterium" class="hc-bacteria-img">
+        <div class="hc-attach-layer"></div>
+      </div>
+    </div>
+  </section>
+  
+
+
+</main>
+
+  <footer>
+    <div class="footer-title">Connect with KathLab</div>
+    <div class="social-icons">
+      <a href="#" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+      <a href="#" target="_blank" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+    </div>
+    <div class="contact-info">
+      Contact us at: <a href="mailto:kathlab@example.com">kathlab@example.com</a>
+    </div>
+    
+    
+
+    
+  </footer>
+</body>
+<script src="js/hersheylabel.js"></script>
+<script src="js/pagbacteria.js"></script>
+<script src="js/phagsragdrop.js"></script>
+<script src="js/blender.js"></script>
+<script src="js/blenderdrag.js"></script>
+<script>
+  document.addEventListener('DOMContentLoaded', () => {
+    enableBacteriaDragging();
+  });
+</script>
+<script src="js/vibrationblend.js"></script>
+<script src="js/testtube.js"></script>
+<script src="js/pourbtn.js"></script>
+<script>
+  pourBtn.addEventListener("click", () => {
+  pourLiquid(side);
+});
+</script>
+<script src="js/Centrifuge.js"></script>
+<script src="js/startcentrifuge.js"></script>
+</html>

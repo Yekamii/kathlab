@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KathLab</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="icon" href="img/Glowing_Rat_Logo_HQ_With_Glow.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <header class="navbar">
+      <a href="index.html" class="logo-text">KathLab</a>
+      <nav>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a  href="about.html">About Us</a></li>
+                <li><a class="active" href="hub.html">KathHub</a></li>
+            </ul>
+      </nav>
+      <a href="hub.html" class="btn-explore">Explore Now</a>
+    </header>
+<main>
+    <div class="bloodcontainer">
+        <h2 class="custom-title">Blood Group Antigen-Antibody Interaction</h2>
+
+        <div class="item">
+            <div class="tag">Antigen A (on RBC)</div>
+            <div class="antigenA"></div>
+        </div>
+
+        <div class="item">
+            <div class="tag tagb">Antigen B (on RBC)</div>
+            <div class="antigenB"></div>
+        </div>
+        <div class="shualine"></div>
+        <div class="item iteman">
+            <div class="tag">Anti-A (in plasma)</div>
+            <div class="antiA"></div>
+        </div>
+
+        <div class="item iteman">
+            <div class="tag">Anti-B (in plasma)</div>
+            <div class="antiB"></div>
+        </div>
+    </div>
+    <div class="rhesus-info">
+        <h3>Rhesus Factor (Rh)</h3>
+        <p>The Rh factor is an important antigen found on the surface of red blood cells&period; If a person&apos;s red blood cells have this antigen&#8218; they are considered <strong>Rh&#8210;positive(Rh⁺)</strong>.</p>
+        <p>Those who do not have this antigen are <strong>Rh&#8210;negative(Rh&macr;)</strong>&period; This factor is important in blood transfusions and pregnancy&period; The main Rh antigen is labeled with the letter <strong>&#68;</strong>&period;The antibody that can react against this antigen is called <strong>anti&#8210;&#68;</strong>&period;</p>
+    </div>
+    <div class="selectors-container fixed-selector">
+        <div class="selection-box">
+            <div class="selection-title">Antigens</div>
+            <label class="archeva"><input type="radio" name="antigen" value="A"> Antigen A</label>
+            <label class="archeva"><input type="radio" name="antigen" value="B"> Antigen B</label>
+            <label class="archeva"><input type="radio" name="antigen" value="AB"> Antigen AB</label>
+            <label class="archeva"><input type="radio" name="antigen" value="none"> None (O)</label>
+        </div>
+        
+        <div class="selection-box">
+            <div class="selection-title">Antibodies</div>
+            <label class="archeva"><input type="radio" name="antibody" value="Anti-A"> Anti-A</label>
+            <label class="archeva"><input type="radio" name="antibody" value="Anti-B"> Anti-B</label>
+            <label class="archeva"><input type="radio" name="antibody" value="Anti-AB"> Both</label>
+            <label class="archeva"><input type="radio" name="antibody" value="none"> None</label>
+        </div>
+        <div class="button-group">
+            <button class="start-button" onclick="startLogic()">Start</button>
+            <button class="reset-button" onclick="resetLogic()">Reset</button>
+        </div>
+    </div>
+    <div id="result-container"></div>
+</main>
+<footer>
+      <div class="footer-title">Connect with KathLab</div>
+      <div class="social-icons">
+        <a href="#" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+        <a href="#" target="_blank" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+      </div>
+      <div class="contact-info">
+          Contact us at: <a href="mailto:kathlab@example.com">kathlab@example.com</a>
+      </div>
+</footer>
+</body>
+<script src="js/blood-rules.js"></script>
+<script src="js/blood-rules-reset.js"></script>
+</html>

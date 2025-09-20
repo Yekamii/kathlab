@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>KathLab</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="style/style.css">
+  <link rel="icon" href="img/Glowing_Rat_Logo_HQ_With_Glow.png">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+  <header class="navbar">
+    <a href="index.html" class="logo-text">KathLab</a>
+    <nav>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a  href="about.html">About Us</a></li>
+        <li><a class="active" href="hub.html">KathHub</a></li>
+      </ul>
+    </nav>
+    <a href="hub.html" class="btn-explore">Explore Now</a>
+  </header>
+  <main>
+  <div class="u-tube">
+    <div class="tube vertical left">
+        <div class="salt-icon" id="salt-left">
+            <img class="salt" src="img/seasoning.png" alt="">
+        </div> 
+      <div class="water water-fill"></div>
+      <div class="label">H<sub>2</sub>O</div>
+    </div>
+    <div class="tube vertical right">
+        <div class="salt-icon" id="salt-right">
+            <img class="salt" src="img/seasoning.png" alt="">
+        </div>
+      <div class="water water-fill"></div>
+      <div class="label">H<sub>2</sub>O</div>
+    </div>
+    <div class="tube horizontal">
+      <div class="water water-horizontal"></div>
+      <div class="membrane"></div>
+    </div>
+  </div>
+  
+  <div class="controls">
+    <div class="controll">
+      <label>Left Salt Concentration</label><br>
+      <input type="range" min="0" max="100" value="0" id="leftSalt">
+      <button  onclick="addSalt('left')">Add Salt to Left</button>
+    </div>
+     <button class="reset" onclick="resetOsmosis()">Reset</button>
+    <div class="controll">
+      <label>Right Salt Concentration</label><br>
+      <input type="range" min="0" max="100" value="0" id="rightSalt">
+      <button  onclick="addSalt('right')">Add Salt to Right</button>
+    </div>
+    <div id="salt-animation-container"></div>
+  </div>
+  
+  </main>
+    <footer>
+    <div class="footer-title">Connect with KathLab</div>
+    <div class="social-icons">
+      <a href="#" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+      <a href="#" target="_blank" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+    </div>
+    <div class="contact-info">
+        Contact us at: <a href="mailto:kathlab@example.com">kathlab@example.com</a>
+    </div>
+  </footer>
+</body>
+<script src="js/osmos.js"></script>
+<script src="js/osmosreset.js"></script>
+</html>
