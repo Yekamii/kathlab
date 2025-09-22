@@ -45,9 +45,9 @@ document.querySelector('.btn.res').addEventListener('click', () => {
   const gif = document.querySelector('.gif-container');
 
   bone.style.transition = 'opacity 1s ease-out';
-  bone.style.opacity = '0';
+  bone.style.opacity = '1';
   bone.style.filter = 'blur(0px)';
-  bone.style.backgroundImage = "url('../img/bone.png')";
+  bone.style.backgroundImage = "url('img/bone.png')";
 
  
  acid.style.animation = 'none';
