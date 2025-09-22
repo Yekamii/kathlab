@@ -43,13 +43,12 @@ document.querySelector('.btn.check').addEventListener('click', () => {
 
     setTimeout(() => {
       
-      if (lastReturnedFrom === 'fire') {
-        bone.style.backgroundImage = "url('../img/bonebreak.png')";
-      } else if (lastReturnedFrom === 'acid') {
-        bone.style.backgroundImage = "url('../img/bonemog.png')";
-      }
-
-      
+  
+    if (lastReturnedFrom === 'fire') {
+    bone.style.backgroundImage = "url('img/bonebreak.png')";
+    } else if (lastReturnedFrom === 'acid') {
+    bone.style.backgroundImage = "url('img/bonemog.png')";
+    }
       setTimeout(() => {
         bone.style.filter = 'blur(0px)';
         bone.style.opacity = 1;
