@@ -3,7 +3,7 @@ document.addEventListener("DOMContentLoaded", () => {
   let bothMicePlaced = false; 
 
   const bacteriaButtons = document.querySelectorAll(".bacteria-option");
-  const resetBtn = document.querySelector(".Reset"); // Reset ღილაკი
+  const resetBtn = document.querySelector(".Reset"); 
   const cage = document.getElementById("cage-mice");
   const controlBox = document.getElementById("control-box");
   const testBox = document.getElementById("test-box");
@@ -36,7 +36,6 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 
   resetBtn.addEventListener("click", () => {
-    // UI Reset
     [controlBox, testBox].forEach(box => {
       box.querySelectorAll(".mouse-img, .syringe, .injection-label, .countdown-label").forEach(el => el.remove());
     });
@@ -60,7 +59,6 @@ document.addEventListener("DOMContentLoaded", () => {
       cage.appendChild(mouse);
     }
 
-    // Logic Reset
     experimentStarted = false;
     bothMicePlaced = false;
   });
