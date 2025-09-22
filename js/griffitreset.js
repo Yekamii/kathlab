@@ -2,11 +2,20 @@ document.addEventListener("DOMContentLoaded", () => {
   let experimentStarted = false; 
   let bothMicePlaced = false; 
 
-  const bacteriaButtons = document.querySelectorAll(".bacteria-option");
-  const resetBtn = document.querySelector(".Reset"); 
   const cage = document.getElementById("cage-mice");
   const controlBox = document.getElementById("control-box");
   const testBox = document.getElementById("test-box");
+  const resetBtn = document.querySelector(".Reset"); 
+
+  if (!cage || !controlBox || !testBox || !resetBtn) {
+    console.error("Essential elements not found! Check HTML structure and class/id names.");
+    return;
+  }
+
+  const bacteriaButtons = document.querySelectorAll(".bacteria-option");
+  if (!bacteriaButtons.length) {
+    console.warn("No bacteria buttons found! Check class names in HTML.");
+  }
 
   function checkMicePlaced() {
     const controlMouse = controlBox.querySelector(".mouse-img");
@@ -14,8 +23,11 @@ document.addEventListener("DOMContentLoaded", () => {
     bothMicePlaced = !!(controlMouse && testMouse);
   }
 
-  document.getElementById("select-control").addEventListener("click", checkMicePlaced);
-  document.getElementById("select-test").addEventListener("click", checkMicePlaced);
+  const selectControlBtn = document.getElementById("select-control");
+  const selectTestBtn = document.getElementById("select-test");
+
+  if (selectControlBtn) selectControlBtn.addEventListener("click", checkMicePlaced);
+  if (selectTestBtn) selectTestBtn.addEventListener("click", checkMicePlaced);
 
   bacteriaButtons.forEach(btn => {
     btn.addEventListener("click", (e) => {
